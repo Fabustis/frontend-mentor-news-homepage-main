@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | News homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,42 +20,109 @@
 </head>
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <div class="header-top">
+    <div>
+      <img href="/assets/images/logo.svg">
+    </div>
+    <nav class="menu-top">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>    
+    </nav>
+  </div>
 
-  The Bright Future of Web 3.0?
+  <main>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+    <div>
+      <img  src="/assets/images/image-web-3-desktop.jpg"
+            srcset="/assets/images/image-web-3-desktop.jpg 1460w,
+                    /assets/images/image-web-3-desktop.jpg 375w"
+            sizes="(max-width: 375px) 1460px,
+                    686px"
+            alt="web3 représenté par une illustration 3d de formes simples"
+      />
+    </div>
 
-  Read more
+    <section>
 
-  New 
+      <h2>The Bright Future of Web 3.0?</h2>
+      
+      <article class="blog-entry">
+        <p>
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?
+        </p>
+        <button>Read more</button>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+      </article>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+    </section>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+    <aside class="news-articles">
+      <h3>New</h3>
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
+      <article>
+        <h4>
+          <a href="#">Hydrogen VS Electric Cars</a>
+        </h4>
+        <p>
+          Will hydrogen-fueled cars ever catch up to EVs?
+        </p>
+      </article>
+      <article>
+        <h4>
+          <a href="#">The Downsides of AI Artistry</a>
+        </h4>
+        <p>
+          What are the possible adverse effects of on-demand AI image generation?
+        </p>
+      </article>
+      <article>
+        <h4>
+          <a href="#">Is VC Funding Drying Up?</a>
+        </h4>
+        <p>
+          Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+      </article>
+    </aside>
 
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
+    <div class="">
+      <article>
+        <h4>
+          <span>01</span>
+          <a href="">
+            Reviving Retro PCs
+          </a>
+        </h4>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </article>
+      <article>
+        <h4>
+          <span>02</span>
+          <a href="">
+            Top 10 Laptops of 2022
+          </a>
+        </h4>
+        <p>Our best picks for various needs and budgets.</p>
+      </article>
+      <article>
+        <h4>
+          <span>03</span>
+          <a href="">
+            The Growth of Gaming
+          </a>
+        </h4>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </article>
+    </div>
 
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
+  </main>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
